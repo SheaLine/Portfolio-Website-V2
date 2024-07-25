@@ -5,8 +5,8 @@ import "./App.css";
 export default function App() {
   return (
     <Scene
-      VideoSrc={`${process.env.PUBLIC_URL}/Blender-Camp-Scene.mp4`}
-      AudioSrc={`${process.env.PUBLIC_URL}/CampAudio.mp3`}
+      VideoSrc={`/public/Blender-Camp-Scene.mp4`}
+      AudioSrc={`/public/CampAudio.mp3`}
     >
       {/* Add interactive objects here */}
       <div className="interactive-object" style={{ top: "20%", left: "40%" }}>
