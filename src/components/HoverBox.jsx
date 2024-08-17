@@ -3,7 +3,7 @@ import "./HoverBox.css";
 
 import { FaEllipsisH } from "react-icons/fa";
 
-function HoverBox({ Text }) {
+function HoverBox({ Text, onClick }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -11,9 +11,7 @@ function HoverBox({ Text }) {
       className="container"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      onClick={() => {
-        console.log(Text);
-      }}
+      onClick={onClick}
     >
       <div className="box">
         {isHovered ? (

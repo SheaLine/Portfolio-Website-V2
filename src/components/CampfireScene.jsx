@@ -1,34 +1,59 @@
-// FullscreenVideo.jsx
-import React, { useRef, useEffect } from "react";
+import React, {
+  useRef,
+  useEffect,
+  forwardRef,
+  useImperativeHandle,
+} from "react";
 import "./CampfireScene.css";
 
-const Scene = ({ VideoSrc, AudioSrc, children }) => {
+const Scene = forwardRef(({ VideoSrc, AudioSrc, children }, ref) => {
   const videoRef = useRef(null);
   const audioRef = useRef(null);
 
   useEffect(() => {
-    if (videoRef.current && audioRef.current) {
-      videoRef.current.play();
+    const video = videoRef.current;
+    const audio = audioRef.current;
 
-      const handleVideoEnd = () => {
-        // Set the video to start a few frames in (e.g., 0.5 seconds)
-        videoRef.current.currentTime = 1;
-        videoRef.current.play();
-      };
+    const handleVideoEnd = () => {
+      if (video) {
+        video.currentTime = 1;
+        video.play();
+      }
+    };
 
-      const handleUserInteraction = () => {
-        audioRef.current.play(); // play audio when user clicks on page
-      };
+    const handleUserInteraction = () => {
+      if (audio) {
+        audio.play();
+      }
+    };
 
-      videoRef.current.addEventListener("ended", handleVideoEnd);
-      document.addEventListener("click", handleUserInteraction); //check fo click to play audio
-
-      return () => {
-        videoRef.current.removeEventListener("ended", handleVideoEnd);
-        document.removeEventListener("click", handleUserInteraction);
-      };
+    if (video && audio) {
+      video.play();
+      video.addEventListener("ended", handleVideoEnd);
+      document.addEventListener("click", handleUserInteraction);
     }
+
+    return () => {
+      if (video) {
+        video.removeEventListener("ended", handleVideoEnd);
+      }
+      document.removeEventListener("click", handleUserInteraction);
+    };
   }, []);
+
+  // This allows the parent component to call stopMedia
+  useImperativeHandle(ref, () => ({
+    stopMedia() {
+      if (videoRef.current) {
+        videoRef.current.pause();
+        videoRef.current.currentTime = 0;
+      }
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+      }
+    },
+  }));
 
   return (
     <div className="fullscreen-video-container">
@@ -41,6 +66,6 @@ const Scene = ({ VideoSrc, AudioSrc, children }) => {
       {children}
     </div>
   );
-};
+});
 
 export default Scene;
