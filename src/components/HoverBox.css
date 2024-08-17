@@ -1,0 +1,46 @@
+/* HoverBox.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Playpen+Sans:wght@100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.container {
+    position: absolute;
+    display: inline-block;
+  }
+  
+  .box {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .container:hover .box {
+    transform: translateX(-32px);
+    width: 136px;
+    height: 64px;
+    border-radius: 0px;
+    background-color: #a24d30;
+    cursor: pointer;
+  }
+
+  .text {
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    text-align: center;
+    color: black;
+    transform: scale(0.5);
+    transition: all 1s ease-in-out;
+  }
+
+.container:hover .text {
+  opacity: 1;
+  transform: scale(1);
+}
