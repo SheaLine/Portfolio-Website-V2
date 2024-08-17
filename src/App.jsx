@@ -8,6 +8,7 @@ export default function App() {
   return (
     <Scene VideoSrc={`./Blender-Camp-Scene.mp4`} AudioSrc={`./CampAudio.mp3`}>
       <div className="title">Shea Line</div>
+      <div className="heading">A Campfire Story</div>
       <div className="about-me-box">
         <HoverBox Text={"About Me"} />
       </div>
