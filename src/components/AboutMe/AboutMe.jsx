@@ -7,7 +7,7 @@ import { IoMdMail } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import "./AboutMe.css";
 
-function AboutMe({ handleFadeOut }) {
+function AboutMe() {
   return (
     <PageLayout className="about-me" title="Hello There!">
       <div className="portrait-wrapper">
