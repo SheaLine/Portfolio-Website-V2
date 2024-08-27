@@ -1,22 +1,17 @@
-import { useNavigate } from "react-router-dom";
 import Scene from "../CampfireScene";
 import withFadeEffect from "../Fade";
 import Carousel from "../ImgCarousel/ImgCarousel";
+import BackButton from "../BackButton/BackButton";
 import { slides } from "../ImgCarousel/CarouselData.json";
 import { FaPhoneSquare } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
-import { IoArrowBackCircle } from "react-icons/io5";
 import "./AboutMe.css";
 
 function AboutMe({ handleFadeOut }) {
-  const navigate = useNavigate();
-
   return (
     <Scene VideoSrc={`./Blender-Camp-Scene.mp4`}>
-      <button onClick={() => handleFadeOut(() => navigate("/home"))}>
-        <IoArrowBackCircle className="back-btn" />
-      </button>
+      <BackButton handleFadeOut={handleFadeOut}></BackButton>
       <div className="about-me">
         <h1>Hello There!</h1>
         <div className="portrait-wrapper">
