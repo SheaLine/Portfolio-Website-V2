@@ -1,4 +1,112 @@
-.test{
-    
-    color: blue;
+.about-me {
+    height: 95%;
+    width: 40%;
+    background-color: #3c4c44;
+    border: 5px solid;
+    border-color: #9e8b76;
+    border-radius: 73px;
+    left: 20%;
+    position: fixed;
+    top: 3%;
+    z-index: 2;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent; /* For Firefox */
+    scrollbar-width: none; /* For Firefox */
+}
+
+.about-me::-webkit-scrollbar {
+    width: 0px;
+}
+
+.about-me::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.about-me::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+.portrait-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 35%;
+    width: auto;
+}
+.portrait{
+    border-radius: 30px;
+}
+
+.about-me h1{
+    margin: 20px;
+    font-family: "Zilla Slab Highlight", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 64px;
+    text-align: center;
+    color: rgb(255, 239, 239);
+}
+
+.about-me p{
+    line-height: 1.5;
+    text-align: justify;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+    color: #ffffff;
+}
+
+.about-me h2{
+    padding-top: 8%;
+    font-family: "Zilla Slab Highlight", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    color: rgb(255, 239, 239);
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center; /* Centers the contact wrapper horizontally */
+    align-items: center; /* Centers the contact wrapper vertically */
+    flex-direction: column; /* Ensures the elements stack vertically */
+    width: 100%; /* Make sure it takes the full width of its parent */
+    margin-top: 20px; /* Add margin if necessary to space it properly from the content above */
+}
+
+.contact a{
+    all: unset;
+    color: rgb(0, 0, 211);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.contact-item .icon{
+    font-size: 24px;
+    margin-right: 10px;
+}
+.contact{
+    line-height: 1.5;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column; /* Ensure the contact lines stack vertically */
+    align-items: flex-start; /* Align items to the start of the container */
+    text-align: left;
+}
+
+.contact .contact-item{
+    display: flex;
+    align-items: center; /* Vertically align the icon and text */
+    margin-bottom: 10px; /* Add some spacing between each contact item */
 }
