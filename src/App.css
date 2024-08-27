@@ -31,6 +31,16 @@ body {
     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
 
+h1{
+  margin: 20px;
+  font-family: "Zilla Slab Highlight", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 64px;
+  text-align: center;
+  color: rgb(255, 239, 239);
+}
+
   /* classes for fading in and out of pages */
   .fade-enter,
 .fade-exit {

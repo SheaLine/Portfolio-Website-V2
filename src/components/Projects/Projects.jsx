@@ -1,12 +1,8 @@
 import React, { useState } from "react";
+import PageLayout from "../PageLayout";
 import "./Projects.css";
 
 function Projects() {
-  return (
-    <div className="test">
-      <h1>Projects</h1>
-      <p>This is the Projects page.</p>
-    </div>
-  );
+  return <PageLayout className="projects" title="Projects"></PageLayout>;
 }
 export default Projects;

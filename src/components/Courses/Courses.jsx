@@ -3,6 +3,6 @@ import PageLayout from "../PageLayout";
 import "./Courses.css";
 
 function Courses() {
-  return <PageLayout className="about-me" title="Courses"></PageLayout>;
+  return <PageLayout className="courses" title="Courses"></PageLayout>;
 }
 export default Courses;

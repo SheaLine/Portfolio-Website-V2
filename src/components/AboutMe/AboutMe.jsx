@@ -1,5 +1,4 @@
 import PageLayout from "../PageLayout";
-import withFadeEffect from "../Fade";
 import Carousel from "../ImgCarousel/ImgCarousel";
 import { slides } from "../ImgCarousel/CarouselData.json";
 import { FaPhoneSquare } from "react-icons/fa";
@@ -60,4 +59,4 @@ function AboutMe() {
     </PageLayout>
   );
 }
-export default withFadeEffect(AboutMe);
+export default AboutMe;
