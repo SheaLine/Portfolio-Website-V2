@@ -1,0 +1,9 @@
+.back-btn{
+    position: absolute ;
+    top: 3%;
+    left: 7%;
+    z-index: 3;
+    font-size: 64px;
+    cursor: pointer;
+    color: #9e8b76;
+}
