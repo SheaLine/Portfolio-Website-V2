@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Scene from "../CampfireScene";
-import withFadeEffect from "../HOC";
+import withFadeEffect from "../Fade";
 import Carousel from "../ImgCarousel/ImgCarousel";
 import { slides } from "../ImgCarousel/CarouselData.json";
 import { FaPhoneSquare } from "react-icons/fa";
