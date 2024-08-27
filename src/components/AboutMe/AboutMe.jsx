@@ -6,19 +6,22 @@ import { slides } from "../ImgCarousel/CarouselData.json";
 import { FaPhoneSquare } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
+import { IoArrowBackCircle } from "react-icons/io5";
 import "./AboutMe.css";
 
-function AboutMe() {
+function AboutMe({ handleFadeOut }) {
   const navigate = useNavigate();
 
   return (
     <Scene VideoSrc={`./Blender-Camp-Scene.mp4`}>
+      <button onClick={() => handleFadeOut(() => navigate("/home"))}>
+        <IoArrowBackCircle className="back-btn" />
+      </button>
       <div className="about-me">
         <h1>Hello There!</h1>
         <div className="portrait-wrapper">
           <img src="/self.png" className="portrait"></img>
         </div>
-
         <p>
           My name is Shea Line and I am from Northern California. I will be
           earning a Bachelor of Science in Computer Science at the University of

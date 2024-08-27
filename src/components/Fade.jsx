@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import HoverBox from "./HoverBox";
 
 function withFadeEffect(OriginalComponent, initialFadeClass = "fade-enter") {
   function NewComponent(props) {
