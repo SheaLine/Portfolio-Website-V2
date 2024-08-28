@@ -1,9 +1,8 @@
 import PageLayout from "../PageLayout";
 import Carousel from "../ImgCarousel/ImgCarousel";
 import { slides } from "../ImgCarousel/CarouselData.json";
-import { FaPhoneSquare } from "react-icons/fa";
+import { FaPhoneSquare, FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import { FaLinkedin } from "react-icons/fa";
 import "./AboutMe.css";
 
 function AboutMe() {

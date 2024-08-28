@@ -41,6 +41,15 @@ h1{
   color: rgb(255, 239, 239);
 }
 
+h2{
+  padding-top: 8%;
+  font-family: "Zilla Slab Highlight", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  color: rgb(255, 239, 239);
+}
+
   /* classes for fading in and out of pages */
   .fade-enter,
 .fade-exit {
