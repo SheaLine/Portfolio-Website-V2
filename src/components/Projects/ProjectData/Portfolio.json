@@ -11,11 +11,11 @@
     ],
     "slides": [
       {
-        "src": "/ProjectAssets/model-recordinmg.mp4",
+        "src": "/Portfolio-Website-V2/ProjectAssets/model-recordinmg.mp4",
         "alt": "Image 1 for carousel"
       },
       {
-        "src": "/Blender-Camp-Scene.mp4",
+        "src": "/Portfolio-Website-V2/Blender-Camp-Scene.mp4",
         "alt": "Image 2 for carousel"
       }
     ]

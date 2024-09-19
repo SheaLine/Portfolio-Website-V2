@@ -15,19 +15,19 @@
     ],
     "slides": [
       {
-        "src": "/ProjectAssets/Quest-picture1.png",
+        "src": "/Portfolio-Website-V2/ProjectAssets/Quest-picture1.png",
         "alt": "Image 1 for carousel"
       },
       {
-        "src": "/ProjectAssets/Quest-video1.mp4",
+        "src": "/Portfolio-Website-V2/ProjectAssets/Quest-video1.mp4",
         "alt": "Image 2 for carousel"
       },
       {
-        "src": "/ProjectAssets/Quest-video2.mp4",
+        "src": "/Portfolio-Website-V2/ProjectAssets/Quest-video2.mp4",
         "alt": "Image 3 for carousel"
       },
       {
-        "src": "/ProjectAssets/Quest-video3.mp4",
+        "src": "/Portfolio-Website-V2/ProjectAssets/Quest-video3.mp4",
         "alt": "Image 4 for carousel"
       }
     ]
