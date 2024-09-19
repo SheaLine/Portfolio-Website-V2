@@ -1,17 +1,82 @@
 .experience{
-    height: 95%;
-    width: 40%;
+    height: 90%;
+    width: 90%;
     background-color: #3c4c44;
     border: 5px solid;
     border-color: #9e8b76;
     border-radius: 73px;
-    left: 20%;
+    left: 5%;
     position: fixed;
-    top: 3%;
+    top: 5%;
     z-index: 2;
     overflow-y: auto;
     padding: 20px;
     box-sizing: border-box;
     scrollbar-color: transparent transparent; /* For Firefox */
     scrollbar-width: none; /* For Firefox */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
 }
+
+.experience .line{
+    position: relative;
+    border-top: 5px dashed #9e8b76;
+    height: 0px;
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.experience .line{
+    position: relative;
+    border-top: 5px dashed #9e8b76;
+    height: 0px;
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.experience h2{
+    padding-top: 0%;
+}
+
+.experience .skills{
+    display: flex;
+    align-items: center; 
+
+}
+
+.experience h4{
+    font-family: "Zilla Slab Highlight", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    color: #9e8b76;
+    align-self: flex-start;
+    margin-right: 30px;
+}
+
+.experience .skills h4:last-child {
+    margin-right: 0; /* Ensures no extra space after the last word */
+}
+
+.experience p{
+    margin: 0.2% 30%; 
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.experience .carousel {
+    width: auto;
+    height: 80%;
+  }
+
+
+  .experience .arrow-left {
+    left: -10rem;
+  }
+  
+  .experience .arrow-right {
+    right: -10rem;
+  }

@@ -12,6 +12,13 @@
 /* Nunito Font */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
 
+/* Rock Salt Font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Rock+Salt&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
+
+/* Jersey 10 Font */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Nunito&family=Rock+Salt&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
+
+
 * {
   box-sizing: border-box;
 }
@@ -42,12 +49,33 @@ h1{
 }
 
 h2{
-  padding-top: 8%;
+  margin-top: 0%;
   font-family: "Zilla Slab Highlight", serif;
   font-weight: 700;
   font-style: normal;
   font-size: 32px;
   color: rgb(255, 239, 239);
+}
+
+h3{
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #d0b100;
+  font-size: 48px;
+  width: 100%; 
+  margin-bottom: 0%;
+  margin-top: 0%;
+}
+
+p{
+  line-height: 1.5;
+  text-align: justify;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 550;
+  font-style: normal;
+  color: #ffffff;
 }
 
   /* classes for fading in and out of pages */

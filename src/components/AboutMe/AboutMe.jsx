@@ -1,8 +1,7 @@
 import PageLayout from "../PageLayout";
 import Carousel from "../ImgCarousel/ImgCarousel";
 import { slides } from "../ImgCarousel/CarouselData.json";
-import { FaPhoneSquare, FaLinkedin } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
+import ContactInfo from "../ContactButton/ContactInfo";
 import "./AboutMe.css";
 
 function AboutMe() {
@@ -33,27 +32,7 @@ function AboutMe() {
         game, or AI.
       </p>
       <div className="contact-wrapper">
-        <h2>Contact Me</h2>
-
-        <div className="contact">
-          <div className="contact-item">
-            <FaPhoneSquare color="white" className="icon" />
-            <span>707-479-6922</span>
-          </div>
-          <div className="contact-item">
-            <IoMdMail className="icon" />
-            <span>sline@ucsc.edu</span>
-          </div>
-          <div className="contact-item">
-            <FaLinkedin className="icon" />
-            <a
-              href="https://www.linkedin.com/in/shea-line-ab3918224/"
-              target="_blank"
-            >
-              LinkedIn
-            </a>
-          </div>
-        </div>
+        <ContactInfo />
       </div>
     </PageLayout>
   );

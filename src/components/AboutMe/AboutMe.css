@@ -57,16 +57,6 @@
     width: auto;
 }
 
-.about-me p{
-    line-height: 1.5;
-    text-align: justify;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 550;
-    font-style: normal;
-    color: #ffffff;
-}
-
 .about-me .contact-wrapper {
     display: flex;
     justify-content: center; /* Centers the contact wrapper horizontally */
@@ -74,38 +64,4 @@
     flex-direction: column; /* Ensures the elements stack vertically */
     width: 100%; /* Make sure it takes the full width of its parent */
     margin-top: 20px; /* Add margin if necessary to space it properly from the content above */
-}
-
-.about-me .contact a{
-    all: unset;
-    color: rgb(0, 0, 211);
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-.about-me .contact-item .icon{
-    font-size: 24px;
-    margin-right: 10px;
-}
-
-.about-me .contact{
-    line-height: 1.5;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 550;
-    font-style: normal;
-    color: #ffffff;
-
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-start;
-    text-align: left;
-}
-
-.about-me .contact .contact-item{
-    display: flex;
-    align-items: center; 
-    margin-bottom: 10px;
 }

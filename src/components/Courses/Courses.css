@@ -15,3 +15,33 @@
     scrollbar-color: transparent transparent; /* For Firefox */
     scrollbar-width: none; /* For Firefox */
 }
+
+.courses .portrait-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 40%;
+    width: auto;
+}
+.courses .portrait{
+    border-radius: 30px;
+}
+
+.courses .course-wrapper {
+    display: block;
+    padding-left: 10%;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.courses h2{
+    list-style-type: disc;
+    font-size: 20px;
+    color: #d0b100;
+    
+}
+
+.courses h2:hover{
+    cursor: pointer;
+    color: #8e7900;
+}

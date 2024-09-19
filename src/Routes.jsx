@@ -12,6 +12,7 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import Projects from "./components/Projects/Projects";
 import Experience from "./components/Experience/Experience";
 import Courses from "./components/Courses/Courses";
+import PdfViewer from "./components/PdfViewer/PdfViewer";
 
 function AppRoutes() {
   return (
@@ -22,7 +23,7 @@ function AppRoutes() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/courses" element={<Courses />} />
-
+        <Route path="/resume" element={<PdfViewer />} />
         <Route path="/" element={<Navigate to="/home" replace />} />
       </Routes>
     </Router>

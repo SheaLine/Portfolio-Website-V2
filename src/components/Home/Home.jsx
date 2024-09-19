@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Scene from "../CampfireScene";
 import HoverBox from "../HoverBox";
 import withFadeEffect from "../Fade";
+import ContactBtn from "../ContactButton/ContactButton";
 import "./Home.css";
 
 function Home({ handleFadeOut }) {
@@ -23,6 +24,10 @@ function Home({ handleFadeOut }) {
       <div className="title">
         Shea Line
         <div className="heading">A Developer's Campfire Story</div>
+      </div>
+
+      <div className="contact-btn">
+        <ContactBtn text={"Contact Me"} />
       </div>
 
       <div className="about-me-box">

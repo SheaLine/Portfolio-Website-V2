@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 100%;
     height: 50%;
   }
   
@@ -11,6 +11,12 @@
     border-radius: 30px;
     width: auto;
     height: 75%;
+  }
+
+  .slide-content {
+    width: auto;
+    height: 100%;
+    border-radius: 30px;
   }
   
   .slide-hidden {
