@@ -15,15 +15,15 @@
     ],
     "slides": [
       {
-        "src": "/ProjectAssets/Chess-picture1.png",
+        "src": "/Portfolio-Website-V2/ProjectAssets/Chess-picture1.png",
         "alt": "Image 1 for carousel"
       },
       {
-        "src": "/ProjectAssets/Chess-video1.mp4",
+        "src": "/Portfolio-Website-V2/ProjectAssets/Chess-video1.mp4",
         "alt": "Image 2 for carousel"
       },
       {
-        "src": "/ProjectAssets/Chess-video2.mp4",
+        "src": "/Portfolio-Website-V2/ProjectAssets/Chess-video2.mp4",
         "alt": "Image 3 for carousel"
       }
     ]
