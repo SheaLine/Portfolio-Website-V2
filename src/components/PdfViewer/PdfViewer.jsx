@@ -11,7 +11,7 @@ const PdfViewer = () => {
       }}
     >
       <embed
-        src="/Portfolio-Website-V2/experience/Resume.pdf"
+        src="/Portfolio-Website-V2/Resume.pdf"
         width="80%"
         height="100%"
         type="application/pdf"
