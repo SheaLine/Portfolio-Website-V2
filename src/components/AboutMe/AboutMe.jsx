@@ -8,7 +8,10 @@ function AboutMe() {
   return (
     <PageLayout className="about-me" title="Hello There!">
       <div className="portrait-wrapper">
-        <img src="/self.png" className="portrait"></img>
+        <img
+          src={`${import.meta.env.BASE_URL}/self.png`}
+          className="portrait"
+        ></img>
       </div>
       <p>
         My name is Shea Line and I am from Northern California. I will be
