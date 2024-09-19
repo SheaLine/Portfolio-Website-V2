@@ -7,7 +7,7 @@ function Courses() {
   return (
     <PageLayout className="courses" title="Courses">
       <div className="portrait-wrapper">
-        <img src="/UCSC.png" className="portrait"></img>
+        <img src="/Portfolio-Website-V2/UCSC.png" className="portrait"></img>
       </div>
       <p>
         UC Santa Cruz offers the ideal combination of academic excellence and

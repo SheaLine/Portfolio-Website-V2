@@ -23,8 +23,10 @@ function ContactBtn({ text, target }) {
         <IoCloseCircleSharp className="close-btn" onClick={CloseContainer} />
         <div className="info-wrapper">
           <ContactInfo />
-          {/* Make sure to change target when deploying */}
-          <LinkBtn text={"My Resume"} target={"http://localhost:5173/resume"} />
+          <LinkBtn
+            text={"My Resume"}
+            target={"https://shealine.github.io/Portfolio-Website-V2/#/resume"}
+          />
         </div>
       </div>
     </>
