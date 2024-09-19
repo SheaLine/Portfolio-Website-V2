@@ -1,0 +1,34 @@
+{   
+    "title": "Escape 1",
+    "skills": ["JavaScript", "Phaser 3", "Game Dev", "Tiled Map Design"],
+    "description": ["Escape 1 is the third video game that I developed. It is a web plateformer game built using the Phaser 3 engine in JavaScript. I used Tiled to create the tilemap for the game and to place the various interactive objects. I created custom spritesheets for the character animations and developed my own classes for all of the game logic. The game is open source and hosted on github pages. The links to play the game yourself or look at the source code are below."
+    ],
+    "links": [
+      {
+        "text": "Play Now",
+        "target": "https://shealine.github.io/Escape1/"
+      },
+      {
+        "text": "Open Source",
+        "target": "https://github.com/SheaLine/Escape1.git"
+      }
+    ],
+    "slides": [
+      {
+        "src": "/ProjectAssets/Escape1-picture.png",
+        "alt": "Image 1 for carousel"
+      },
+      {
+        "src": "/ProjectAssets/Escape1-video1.mp4",
+        "alt": "Image 2 for carousel"
+      },
+      {
+        "src": "/ProjectAssets/Escape1-video2.mp4",
+        "alt": "Image 3 for carousel"
+      },
+      {
+        "src": "/ProjectAssets/Escape1-video3.mp4",
+        "alt": "Image 4 for carousel"
+      }
+    ]
+  }

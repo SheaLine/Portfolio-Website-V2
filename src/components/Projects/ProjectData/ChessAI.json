@@ -1,0 +1,30 @@
+{   
+    "title": "Chess AI",
+    "skills": ["C++", "Dear ImGui", "Negamax", "OOP"],
+    "description": ["This is a chess AI I built from scratch during my Advanced Programming class at UCSC. The game is built in C++ using Dear ImGui for the user interface. The AI uses a Negamax algorithm with alpa beta pruning. The AI simulates three moves ahead for both colors and evaluates each game state based on piece position and the value of each piece. If the state is evaluated at a higher number, then it is in favor of white, if the score is a lower number, then it is in favor of black. The AI chooses the best move that will result in the lowest possible score since it is playing as black. I have also created a version that works with UCI (Universal Chess Interface) which is an open communication protocol that enables chess engines to communicate with different user interfaces. Both versions are linked below."
+    ],
+    "links": [
+      {
+        "text": "Dear ImGui UI",
+        "target": "https://github.com/SheaLine/Chess_checkmate_withAI.git"
+      },
+      {
+        "text": "UCI Source",
+        "target": "https://github.com/SheaLine/Chess_UCI.git"
+      }
+    ],
+    "slides": [
+      {
+        "src": "/ProjectAssets/Chess-picture1.png",
+        "alt": "Image 1 for carousel"
+      },
+      {
+        "src": "/ProjectAssets/Chess-video1.mp4",
+        "alt": "Image 2 for carousel"
+      },
+      {
+        "src": "/ProjectAssets/Chess-video2.mp4",
+        "alt": "Image 3 for carousel"
+      }
+    ]
+  }

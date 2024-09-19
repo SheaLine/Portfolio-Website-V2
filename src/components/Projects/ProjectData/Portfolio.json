@@ -1,0 +1,22 @@
+{   
+    "title": "This Website",
+    "skills": ["React", "Web Dev", "Blender", "3D Animation"],
+    "description":[ "I built this website during my free time to display all of my projects and to tell my story. I wanted to create something that was unique and stand out from other portfolios. That is when I had the idea to create a campfire model in blender to put on the background of the website. I thought that there was no better place to tell a story than around a campfire. Below, you can see the model of the campfire scene that I built using Blender. I used React.js to implement the user interface. The website is hosted on github pages and all the code can be found in the repository linked below."
+    ],
+    "links": [
+      {
+        "text": "Open Source",
+        "target": "https://github.com/SheaLine/Portfolio-Website-V2.git"
+      }
+    ],
+    "slides": [
+      {
+        "src": "/ProjectAssets/model-recordinmg.mp4",
+        "alt": "Image 1 for carousel"
+      },
+      {
+        "src": "/Blender-Camp-Scene.mp4",
+        "alt": "Image 2 for carousel"
+      }
+    ]
+  }

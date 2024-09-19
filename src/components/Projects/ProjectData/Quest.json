@@ -1,0 +1,34 @@
+{   
+    "title": "Quest",
+    "skills": ["JavaScript", "Phaser 3", "State Machines", "Platformer"],
+    "description": ["Quest is a plateformer game that I developed as an academic project. I created this game to learn about different particle systems I could use in Phaser 3. I also wanted to create seamless movement that created a quality feel. The game uses a state machine to control the logic for the final boss and Phaser's arcade physics engine to detect collisions. The code can be found below as well as the link to play the game."
+    ],
+    "links": [
+      {
+        "text": "Play Now",
+        "target": "https://shealine.github.io/Quest/"
+      },
+      {
+        "text": "Open Source",
+        "target": "https://github.com/SheaLine/Quest.git"
+      }
+    ],
+    "slides": [
+      {
+        "src": "/ProjectAssets/Quest-picture1.png",
+        "alt": "Image 1 for carousel"
+      },
+      {
+        "src": "/ProjectAssets/Quest-video1.mp4",
+        "alt": "Image 2 for carousel"
+      },
+      {
+        "src": "/ProjectAssets/Quest-video2.mp4",
+        "alt": "Image 3 for carousel"
+      },
+      {
+        "src": "/ProjectAssets/Quest-video3.mp4",
+        "alt": "Image 4 for carousel"
+      }
+    ]
+  }

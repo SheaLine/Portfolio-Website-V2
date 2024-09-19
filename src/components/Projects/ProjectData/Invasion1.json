@@ -1,0 +1,30 @@
+{   
+    "title": "Invasion1",
+    "skills": ["JavaScript", "Phaser 3", "Gallery Shooter"],
+    "description": ["Invasion 1 is the first phaser 3 game that I developed. It is a simple gallery shooter where I learned about pathfinding using spline curves. The code for this game can be found on git hub and the link to play is below. "
+    ],
+    "links": [
+      {
+        "text": "Play Now",
+        "target": "https://shealine.github.io/Invasion1/"
+      },
+      {
+        "text": "Open Source",
+        "target": "https://github.com/SheaLine/Invasion1.git"
+      }
+    ],
+    "slides": [
+      {
+        "src": "/ProjectAssets/Invasion1-picture1.png",
+        "alt": "Image 1 for carousel"
+      },
+      {
+        "src": "/ProjectAssets/Invasion1-video1.mp4",
+        "alt": "Image 2 for carousel"
+      },
+      {
+        "src": "/ProjectAssets/Invasion1-video2.mp4",
+        "alt": "Image 3 for carousel"
+      }
+    ]
+  }

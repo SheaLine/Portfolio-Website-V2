@@ -1,0 +1,22 @@
+{   
+    "title": "Enterprise Network Design",
+    "skills": ["Cisco IOS", "IPv4", "OSPF", "VLAN", "DHCPv4"],
+    "description":[ "I built this project in my Advanced Networks class. The project is designed to simulate real-world enterprise network environments. I implemented key networking protocols and technologies within a campus network architecture. I explored concepts such as VLANs, trunking, Spanning Tree Protocol, EtherChannel, First Hop Redundancy Protocols, Layer 3 Switching, and Open Shortest Path First. By configuring and documenting these technologies, the project not only demonstrates technical proficiency, but also provides a foundation for managing complex network infrastructures in professional settings."
+    ],
+    "links": [
+      {
+        "text": "Documentation",
+        "target": "https://github.com/SheaLine/Campus-Network-Architecture.git/"
+      }
+    ],
+    "slides": [
+      {
+        "src": "/ProjectAssets/Campus_Architecture_Network_Topology.png",
+        "alt": "Image 1 for carousel"
+      },
+      {
+        "src": "/ProjectAssets/Network-video1.mp4",
+        "alt": "Image 2 for carousel"
+      }
+    ]
+  }

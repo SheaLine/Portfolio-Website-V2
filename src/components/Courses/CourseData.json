@@ -1,0 +1,47 @@
+[
+    {
+      "name": "CSE 12 - Computer Systems and Assembly Language",
+      "link": "https://catalog.ucsc.edu/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-12/"
+    },
+    {
+      "name": "ECE 13 - Computer Systems and C programming",
+      "link": "https://catalog.ucsc.edu/current/general-catalog/courses/ece-electrical-and-computer-engineering/lower-division/ece-13/"
+    },
+    {
+      "name": "CSE 30 - Programming Abstractions in Python",
+      "link": "https://catalog.ucsc.edu/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-30/"
+    },
+    {
+      "name": "CSE 40 - Machine Learning Basics",
+      "link": "https://catalog.ucsc.edu/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-40/"
+    },
+    {
+      "name": "CSE 101 - Data Structures and Algorithms",
+      "link": "https://catalog.ucsc.edu/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-101/"
+    },
+    {
+      "name": "CSE 150 - Intro to Computer Networking",
+      "link": "https://catalog.ucsc.edu/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-150/"
+    },
+    {
+      "name": "CMPM 178 - Human Centered Design Research",
+      "link": "https://catalog.ucsc.edu/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-178/"
+    },
+    {
+      "name": "CMPM 123 - Advanced Programming",
+      "link": "https://catalog.ucsc.edu/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-123/"
+    },
+    {
+      "name": "CMPM 120 - Game Development Experience",
+      "link": "https://catalog.ucsc.edu/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-120/"
+    },
+    {
+      "name": "CMPM 130 - UI & UX Design",
+      "link": "https://catalog.ucsc.edu/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-130/"
+    },
+    {
+      "name": "CSE 151 - Advanced Computer Networking",
+      "link": "https://catalog.ucsc.edu/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-151/"
+    }
+  ]
+  

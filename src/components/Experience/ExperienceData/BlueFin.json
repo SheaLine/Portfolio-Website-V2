@@ -1,0 +1,32 @@
+{   
+    "title": "BlueFin Solutions",
+    "skills": ["Remote Internship", "React", "Django", "REST APIs", "Web Dev"],
+    "description":[ 
+        "Bluefin Solutions Limited is a privately and locally owned company based in Dar es Salaam, Tanzania which specializes in ICT products and providing various technological services that brings value to clients through developing customized systems, websites, mobile applications, USSD and Short Code, provision of Bulk SMS, online marketing and ICT consultations.",
+        "I worked at Bluefin Solutions during the summer of 2024, as part of a development team for a web application aimed at Insurance Direct Billing and Settlement. The system was designed to expedite claim settlements, minimize fraud, and maintain regulatory compliance for the Tanzanian market. In my role, I was responsible for designing the user interface and implementing the front-end using React, JavaScript, CSS, and Figma. Additionally, I collaborated with the back-end team to integrate the application's front-end with RESTful APIs and other back-end services, ensuring seamless communication between the user interface and data processing functionalities.",
+        "Below are some of the early prototype screens that I implemented."
+    ],
+    "links": [],
+    "slides": [
+      {
+        "src": "/BluFinAssets/login.png",
+        "alt": "Image 1 for carousel"
+      },
+      {
+        "src": "/BluFinAssets/InsuranceAgent.png",
+        "alt": "Image 2 for carousel"
+      },
+      {
+        "src": "/BluFinAssets/Admin.png",
+        "alt": "Image 2 for carousel"
+      },
+      {
+        "src": "/BluFinAssets/ClaimSubmission.png",
+        "alt": "Image 2 for carousel"
+      },
+      {
+        "src": "/BluFinAssets/AccountInfo.png",
+        "alt": "Image 2 for carousel"
+      }
+    ]
+  }
