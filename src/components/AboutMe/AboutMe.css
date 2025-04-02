@@ -1,67 +1,75 @@
-.about-me{
-    height: 95%;
-    width: 40%;
-    background-color: #3c4c44;
-    border: 5px solid;
-    border-color: #9e8b76;
-    border-radius: 73px;
-    left: 20%;
-    position: fixed;
-    top: 3%;
-    z-index: 2;
-    overflow-y: auto;
-    padding: 20px;
-    box-sizing: border-box;
-    scrollbar-color: transparent transparent; /* For Firefox */
-    scrollbar-width: none; /* For Firefox */
+.about-me {
+  height: 95%;
+  width: 40%;
+  background-color: #3c4c44;
+  border: 5px solid;
+  border-color: #9e8b76;
+  border-radius: 73px;
+  left: 20%;
+  position: fixed;
+  top: 3%;
+  z-index: 2;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent; /* For Firefox */
+  scrollbar-width: none; /* For Firefox */
 
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.about-me.expanded{
-    width: 90%;  /* Almost full width */
-    height: 90%; /* Almost full height */
-    left: 5%;    /* Centered horizontally */
-    top: 5%;     /* Centered vertically */
-    border-radius: 20px; /* Adjust border radius for expanded view */
+.about-me.expanded {
+  width: 90%; /* Almost full width */
+  height: 90%; /* Almost full height */
+  left: 5%; /* Centered horizontally */
+  top: 5%; /* Centered vertically */
+  border-radius: 20px; /* Adjust border radius for expanded view */
 }
 
 .about-me::-webkit-scrollbar {
-    width: 0px;
+  width: 0px;
 }
 
 .about-me::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 .about-me::-webkit-scrollbar-thumb {
-    background: transparent;
+  background: transparent;
 }
 
-.about-me .portrait-wrapper{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    height: 35%;
-    width: auto;
+.about-me .portrait-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  height: 35%;
+  width: auto;
 }
-.about-me .portrait{
-    border-radius: 30px;
+.about-me .portrait {
+  border-radius: 30px;
 }
 
-.about-me .portrait-wrapper.expanded{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    height: 50%;
-    width: auto;
+.about-me .portrait-wrapper.expanded {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  height: 50%;
+  width: auto;
 }
 
 .about-me .contact-wrapper {
-    display: flex;
-    justify-content: center; /* Centers the contact wrapper horizontally */
-    align-items: center; /* Centers the contact wrapper vertically */
-    flex-direction: column; /* Ensures the elements stack vertically */
-    width: 100%; /* Make sure it takes the full width of its parent */
-    margin-top: 20px; /* Add margin if necessary to space it properly from the content above */
+  display: flex;
+  justify-content: center; /* Centers the contact wrapper horizontally */
+  align-items: center; /* Centers the contact wrapper vertically */
+  flex-direction: column; /* Ensures the elements stack vertically */
+  width: 100%; /* Make sure it takes the full width of its parent */
+  margin-top: 20px; /* Add margin if necessary to space it properly from the content above */
+}
+
+.about-me .arrow-left {
+  left: 1rem;
+}
+
+.about-me .arrow-right {
+  right: 1rem;
 }
