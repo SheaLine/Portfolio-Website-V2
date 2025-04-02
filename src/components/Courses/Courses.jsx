@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import PageLayout from "../PageLayout";
 import courses from "./CourseData.json";
 import "./Courses.css";
