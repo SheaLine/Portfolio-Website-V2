@@ -1,6 +1,6 @@
 {   
     "title": "Cabin Crafter",
-    "skills": ["Genetic Algorithms", "Gemini", "Flask", "React.ts", "Vite"],
+    "skills": ["Genetic Algorithms", "LLM", "Flask", "React.ts", "Vite"],
     "description": ["Cabin Crafter is an AI Minecraft build generator using a LLM and genetic algorithm. The build is generated through a specific initial prompt that prompts the AI with all blocks available to it and a couple rules of generation. When a user inputs the build size and description those parameters are passed to Google’s Gemini which takes in the information and outputs a layered json of all the layers of the build ending with a smaller section of allowed blocks that will be used in a genetic algorithm to refine the build. The initial build generation is given specific parameters it must pass in order to pass onto the next steps and is given 3 attempts to do so before a default build is used instead of the AI’s generation.", 
     "After the initial build is generated, it is then passed to a genetic algorithm whose job it is to generate the interior decoration, the roofline, and score the build in order to incrementally generate a more aesthetically and thematically pleasing build using mutation and fitness functions."
     ],
