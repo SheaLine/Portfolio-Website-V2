@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import PageLayout from "../PageLayout";
 import Project from "./ProjectSkel";
 
@@ -9,12 +8,14 @@ import Escape1 from "./ProjectData/Escape1.json";
 import ChessAI from "./ProjectData/ChessAI.json";
 import Network from "./ProjectData/Network.json";
 import Portfolio from "./ProjectData/Portfolio.json";
+import CabinCrafter from "./ProjectData/CabinCrafter.json";
 import "./Projects.css";
 
 function Projects() {
   return (
     <PageLayout className="projects" title="Projects">
       <div className="line"></div>
+      <Project {...CabinCrafter} />
       <Project {...Portfolio} />
       <Project {...ChessAI} />
       <Project {...Network} />
