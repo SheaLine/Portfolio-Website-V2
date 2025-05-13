@@ -1,33 +1,41 @@
-.contact a{
-    all: unset;
-    color: rgb(0, 0, 211);
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    cursor: pointer;
-    text-decoration: underline;
+.contact {
+  align-self: center;
+  justify-self: center;
+  line-height: 1.5;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 550;
+  font-style: normal;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(10px, 2vw, 20px);
 }
 
-.contact-item .icon{
-    font-size: 24px;
-    margin-right: 10px;
+.contact a {
+  all: unset;
+  color: rgb(0, 0, 211);
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: clamp(14px, 2vw, 16px);
 }
 
-.contact{
-    line-height: 1.5;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 550;
-    font-style: normal;
-    color: #ffffff;
-
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-start;
-    text-align: left;
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: clamp(8px, 2vw, 10px);
+  font-size: clamp(14px, 2vw, 16px);
 }
 
-.contact .contact-item{
-    display: flex;
-    align-items: center; 
-    margin-bottom: 10px;
+.contact-item .icon {
+  font-size: clamp(18px, 3vw, 24px);
+  margin-right: clamp(8px, 2vw, 10px);
+}
+
+@media screen and (max-width: 480px) {
+  .contact {
+    padding: 5px;
+  }
 }

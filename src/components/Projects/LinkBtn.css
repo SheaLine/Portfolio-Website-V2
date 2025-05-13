@@ -1,18 +1,29 @@
-.link-btn{
-    width: 221px;
-    height: 45px;
-    line-height: 44px;
-    border-radius: 13px;
-    background-color: #9e8b76;
-    border: 2px solid white;
-    padding: 0;
-    font-family: "Jersey 10", sans-serif;
-    font-size: 40px;
-    text-align: center;
-    color: white;
-    cursor: pointer;
-    flex-shrink: 0;
+.link-btn {
+  width: clamp(180px, 30vw, 221px);
+  height: clamp(35px, 6vw, 45px);
+  line-height: clamp(34px, 5.5vw, 44px);
+  border-radius: clamp(10px, 2vw, 13px);
+  background-color: #9e8b76;
+  border: 2px solid white;
+  padding: 0;
+  font-family: "Jersey 10", sans-serif;
+  font-size: clamp(28px, 5vw, 40px);
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-.link-btn:hover{
-    background-color: #776858;
+
+.link-btn:hover {
+  background-color: #776858;
+}
+
+@media screen and (max-width: 480px) {
+  .link-btn {
+    width: 160px;
+    height: 32px;
+    line-height: 30px;
+    font-size: 24px;
+    border-width: 1px;
+  }
 }

@@ -1,47 +1,83 @@
-.courses{
-    height: 95%;
-    width: 40%;
-    background-color: #3c4c44;
-    border: 5px solid;
-    border-color: #9e8b76;
-    border-radius: 73px;
-    left: 20%;
-    position: fixed;
-    top: 3%;
-    z-index: 2;
-    overflow-y: auto;
-    padding: 20px;
-    box-sizing: border-box;
-    scrollbar-color: transparent transparent; /* For Firefox */
-    scrollbar-width: none; /* For Firefox */
+.courses {
+  height: 90vh;
+  width: 90%;
+  max-width: 1200px;
+  background-color: #3c4c44;
+  border: 5px solid #9e8b76;
+  border-radius: clamp(20px, 5vw, 73px);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  overflow-y: auto;
+  padding: clamp(15px, 3vw, 30px);
+  box-sizing: border-box;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.courses .portrait-wrapper{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    height: 40%;
-    width: auto;
+.courses::-webkit-scrollbar {
+  display: none;
 }
-.courses .portrait{
-    border-radius: 30px;
+
+.courses .portrait-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-height: 40vh;
+}
+
+.courses .portrait {
+  border-radius: 30px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .courses .course-wrapper {
-    display: block;
-    padding-left: 10%;
-    width: 100%;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
 }
 
-.courses h2{
-    list-style-type: disc;
-    font-size: 20px;
-    color: #d0b100;
-    
+.courses h2 {
+  font-size: clamp(16px, 2.5vw, 20px);
+  color: #d0b100;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-.courses h2:hover{
-    cursor: pointer;
-    color: #8e7900;
+.courses h2:hover {
+  color: #8e7900;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .courses {
+    width: 95%;
+    height: 95vh;
+    padding: 15px;
+  }
+
+  .courses .portrait-wrapper {
+    max-height: 30vh;
+  }
+
+  .courses .course-wrapper {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .courses {
+    border-width: 3px;
+  }
 }

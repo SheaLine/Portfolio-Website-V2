@@ -9,43 +9,100 @@ import "./Home.css";
 function Home({ handleFadeOut }) {
   const sceneRef = useRef(null);
   const navigate = useNavigate();
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Initial state based on screen size
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768); // Update state on resize
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize); // Add event listener for resize
+    return () => {
+      window.removeEventListener("resize", handleResize); // Cleanup on unmount
+    };
+  }, []);
 
   const handleClick = (path) => {
     handleFadeOut(() => {
       if (sceneRef.current) {
-        sceneRef.current.stopMedia(); // Stop the video and audio
+        sceneRef.current.stopMedia();
       }
-      navigate(path); // Navigate to the specified route
+      navigate(path);
     });
   };
 
   return (
-    <Scene VideoSrc={`./Blender-Camp-Scene.mp4`} AudioSrc={`./CampAudio.mp3`}>
-      <div className="title">
-        Shea Line
-        <div className="heading">A Developer's Campfire Story</div>
-      </div>
+    <>
+      {isMobile ? (
+        // <img
+        //   src="./Blender-Camp-Scene.jpg" // Replace with the path to your static image
+        //   alt="Campfire Scene"
+        //   className="mobile-scene"
+        // >
+        <div className="mobile-scene">
+          <div className="title">
+            Shea Line
+            <div className="heading">A Developer&apos;s Campfire Story</div>
+          </div>
 
-      <div className="contact-btn">
-        <ContactBtn text={"Contact Me"} />
-      </div>
+          <div className="contact-btn">
+            <ContactBtn text={"Contact Me"} />
+          </div>
 
-      <div className="about-me-box">
-        <HoverBox Text={"About Me"} onClick={() => handleClick("/about-me")} />
-      </div>
-      <div className="projects-box">
-        <HoverBox Text={"Projects"} onClick={() => handleClick("/projects")} />
-      </div>
-      <div className="experience-box">
-        <HoverBox
-          Text={"Experience"}
-          onClick={() => handleClick("/experience")}
-        />
-      </div>
-      <div className="courses-box">
-        <HoverBox Text={"Courses"} onClick={() => handleClick("/courses")} />
-      </div>
-    </Scene>
+          <div className="navigation-boxes">
+            <HoverBox
+              Text={"About Me"}
+              onClick={() => handleClick("/about-me")}
+            />
+            <HoverBox
+              Text={"Projects"}
+              onClick={() => handleClick("/projects")}
+            />
+            <HoverBox
+              Text={"Experience"}
+              onClick={() => handleClick("/experience")}
+            />
+            <HoverBox
+              Text={"Courses"}
+              onClick={() => handleClick("/courses")}
+            />
+          </div>
+        </div>
+      ) : (
+        <Scene
+          VideoSrc={`./Blender-Camp-Scene.mp4`}
+          AudioSrc={`./CampAudio.mp3`}
+        >
+          <div className="title">
+            Shea Line
+            <div className="heading">A Developer&apos;s Campfire Story</div>
+          </div>
+
+          <div className="contact-btn">
+            <ContactBtn text={"Contact Me"} />
+          </div>
+
+          <div className="navigation-boxes">
+            <HoverBox
+              Text={"About Me"}
+              onClick={() => handleClick("/about-me")}
+            />
+            <HoverBox
+              Text={"Projects"}
+              onClick={() => handleClick("/projects")}
+            />
+            <HoverBox
+              Text={"Experience"}
+              onClick={() => handleClick("/experience")}
+            />
+            <HoverBox
+              Text={"Courses"}
+              onClick={() => handleClick("/courses")}
+            />
+          </div>
+        </Scene>
+      )}
+    </>
   );
 }
 

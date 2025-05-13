@@ -1,26 +1,27 @@
 /*App.css*/
 
 /* Monoton Font */
-@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /* Titillium Web Font */
-@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Playpen+Sans&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Playpen+Sans&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /* Zilla Slab Highlight Font */
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@400;700&display=swap");
 
 /* Nunito Font */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
 
 /* Rock Salt Font */
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Rock+Salt&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Rock+Salt&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
 
 /* Jersey 10 Font */
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Nunito&family=Rock+Salt&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Nunito&family=Rock+Salt&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
@@ -28,8 +29,6 @@ body,
 #root {
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -38,37 +37,36 @@ body {
     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
 
-h1{
+h1 {
   margin: 20px;
   font-family: "Zilla Slab Highlight", serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 64px;
+  font-size: clamp(32px, 5vw, 64px);
   text-align: center;
   color: rgb(255, 239, 239);
 }
 
-h2{
-  margin-top: 0%;
+h2 {
+  margin-top: 0;
   font-family: "Zilla Slab Highlight", serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 32px;
+  font-size: clamp(24px, 4vw, 32px);
   color: rgb(255, 239, 239);
 }
 
-h3{
+h3 {
   font-family: "Rock Salt", cursive;
   font-weight: 400;
   font-style: normal;
   color: #d0b100;
-  font-size: 48px;
-  width: 100%; 
-  margin-bottom: 0%;
-  margin-top: 0%;
+  font-size: clamp(32px, 5vw, 48px);
+  width: 100%;
+  margin: 0;
 }
 
-p{
+p {
   line-height: 1.5;
   text-align: justify;
   font-family: "Nunito", sans-serif;
@@ -76,10 +74,11 @@ p{
   font-weight: 550;
   font-style: normal;
   color: #ffffff;
+  font-size: clamp(14px, 2vw, 16px);
 }
 
-  /* classes for fading in and out of pages */
-  .fade-enter,
+/* classes for fading in and out of pages */
+.fade-enter,
 .fade-exit {
   opacity: 0;
 }
@@ -92,4 +91,11 @@ p{
 .fade-exit-active {
   opacity: 0;
   transition: opacity 0.5s ease-out;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  h1 {
+    margin: 10px;
+  }
 }

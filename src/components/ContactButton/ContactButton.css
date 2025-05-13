@@ -1,74 +1,94 @@
-
 .contact-button {
-    padding: 5px 30px;
-    background-color: #9e8b76;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
+  padding: clamp(3px, 1vw, 5px) clamp(20px, 4vw, 30px);
+  background-color: #9e8b76;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: clamp(3px, 1vw, 5px);
+  font-family: "Jersey 10", sans-serif;
+  font-size: clamp(24px, 4vw, 40px);
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
 
-    font-family: "Jersey 10", sans-serif;
-    font-size: 40px;
-    text-align: center;
-  }
-
-.contact-button:hover{
-    background-color: #776858;
+.contact-button:hover {
+  background-color: #776858;
 }
 
 .contact-container {
-    height: 100%;
-    width: 0;
-    top: 0;
-    right: 0;
-    background-color: #3c4c44;
-    border: 5px solid;
-    border-color: #9e8b76;
-    position: fixed;
-    z-index: 2;
-    overflow-y: auto;
-    padding: 20px;
-    box-sizing: border-box;
-    scrollbar-color: transparent transparent; /* For Firefox */
-    scrollbar-width: none; /* For Firefox */
-
-
-    opacity: 0;
-    visibility: hidden;
-    transition: width 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
-  }
-  
-  .contact-container.show {
-    opacity: 1;
-    visibility: visible;
-    width: 30%;
-  }
-
-
-  .close-btn{
-    position: absolute ;
-    top: 0%;
-    left: 80%;
-    z-index: 3;
-    font-size: 64px;
-    cursor: pointer;
-    color: #d0b100;
+  height: 100%;
+  width: 0;
+  top: 0;
+  right: 0;
+  background-color: #3c4c44;
+  border: 5px solid #9e8b76;
+  position: fixed;
+  z-index: 2;
+  overflow-y: auto;
+  padding: clamp(15px, 3vw, 20px);
+  box-sizing: border-box;
+  scrollbar-width: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: width 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.close-btn:hover{
-    color: #8e7900;
+.contact-container::-webkit-scrollbar {
+  display: none;
 }
 
-.info-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+.contact-container.show {
+  opacity: 1;
+  visibility: visible;
+  width: clamp(280px, 50vw, 400px);
+}
+
+.close-btn {
+  position: absolute;
+  top: clamp(8px, 2vw, 10px);
+  right: clamp(8px, 2vw, 10px);
+  z-index: 3;
+  font-size: clamp(32px, 6vw, 64px);
+  cursor: pointer;
+  color: #d0b100;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #8e7900;
+}
+
+.info-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: clamp(10px, 2vw, 20px);
 }
 
 .info-wrapper .link-btn {
-    margin-top: 10%;
+  margin-top: clamp(20px, 4vw, 40px);
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container.show {
+    width: 80%;
+  }
+
+  .contact-button {
+    padding: 3px 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-container {
+    border-width: 3px;
+  }
+
+  .contact-button {
+    font-size: 20px;
+    padding: 2px 12px;
+  }
 }
