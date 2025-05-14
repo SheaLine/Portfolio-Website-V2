@@ -17,6 +17,12 @@
   align-items: flex-start;
 }
 
+.warning {
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
 .heading {
   font-family: "Titillium Web", sans-serif;
   font-weight: 400;

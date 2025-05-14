@@ -53,35 +53,44 @@ function Home({ handleFadeOut }) {
   return (
     <>
       {isMobile ? (
-        <div
-          className="mobile-scene"
-          style={{ "--focus-x": focusX, "--focus-y": "25%" }}
-        >
-          <div className="title">
-            Shea Line
-            <div className="heading">A Developer&apos;s Campfire Story</div>
+        <>
+          <div className="warning">
+            {" "}
+            For Full Experience Use a Laptop or Desktop{" "}
           </div>
+          <div
+            className="mobile-scene"
+            style={{ "--focus-x": focusX, "--focus-y": "25%" }}
+          >
+            <div className="title">
+              Shea Line
+              <div className="heading">A Developer&apos;s Campfire Story</div>
+            </div>
 
-          <div className="navigation-boxes">
-            <HoverBox
-              Text="About Me"
-              onClick={() => handleClick("/about-me")}
-            />
-            <HoverBox
-              Text="Projects"
-              onClick={() => handleClick("/projects")}
-            />
-            <HoverBox
-              Text="Experience"
-              onClick={() => handleClick("/experience")}
-            />
-            <HoverBox Text="Courses" onClick={() => handleClick("/courses")} />
-          </div>
+            <div className="navigation-boxes">
+              <HoverBox
+                Text="About Me"
+                onClick={() => handleClick("/about-me")}
+              />
+              <HoverBox
+                Text="Projects"
+                onClick={() => handleClick("/projects")}
+              />
+              <HoverBox
+                Text="Experience"
+                onClick={() => handleClick("/experience")}
+              />
+              <HoverBox
+                Text="Courses"
+                onClick={() => handleClick("/courses")}
+              />
+            </div>
 
-          <div className="contact-btn">
-            <ContactBtn text="Contact Me" />
+            <div className="contact-btn">
+              <ContactBtn text="Contact Me" />
+            </div>
           </div>
-        </div>
+        </>
       ) : (
         <Scene
           ref={sceneRef}

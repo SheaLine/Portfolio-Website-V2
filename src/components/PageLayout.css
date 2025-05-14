@@ -1,0 +1,29 @@
+/* PageLayout.css */
+
+.fullscreen-image-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  background-image: url("/Blender-Camp-Scene.png");
+  background-size: cover;
+  background-position: center center; /* or tweak to your focal point */
+  background-repeat: no-repeat;
+}
+
+.fullscreen-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Ensure everything else (BackButton + page content) sits above the image */
+.fullscreen-image-container > *:not(.fullscreen-image) {
+  position: relative;
+  z-index: 1;
+}
