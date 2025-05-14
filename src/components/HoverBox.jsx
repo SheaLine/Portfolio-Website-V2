@@ -1,26 +1,27 @@
-import React, { useState } from "react";
+// import React, { useState, useEffect } from "react";
 import "./HoverBox.css";
 
-import { FaEllipsisH } from "react-icons/fa";
+// import { FaEllipsisH } from "react-icons/fa";
 
 function HoverBox({ Text, onClick }) {
-  const [isHovered, setIsHovered] = useState(false);
+  // const [isHovered, setIsHovered] = useState(false);
+  // const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Initial state based on screen size
+
+  // const handleResize = () => {
+  //   setIsMobile(window.innerWidth <= 768); // Update state on resize
+  // };
+
+  // useEffect(() => {
+  //   window.addEventListener("resize", handleResize); // Add event listener for resize
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize); // Cleanup on unmount
+  //   };
+  // }, []);
 
   return (
-    <div
-      className="container"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      onClick={onClick}
-    >
-      <div className="box">
-        {isHovered ? (
-          <span className="text">{Text}</span>
-        ) : (
-          <FaEllipsisH color="Black" />
-        )}
-      </div>
-    </div>
+    <button className="mobile-button" onClick={onClick}>
+      {Text}
+    </button>
   );
 }
 

@@ -13,6 +13,8 @@
   display: flex;
   flex-direction: column;
   text-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .heading {
@@ -30,18 +32,14 @@
   text-align: right;
   text-wrap: nowrap;
 }
-
 .navigation-boxes {
   position: absolute;
-  bottom: 5%;
-  left: 50%;
+  top: calc(30% + 1.5em + clamp(24px, 4vw, 36px));
+  left: 30%;
   transform: translateX(-50%);
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  width: 90%;
-  max-width: 800px;
+  gap: 2rem;
   z-index: 2;
 }
 
@@ -53,9 +51,17 @@
 }
 
 .mobile-scene {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   background-image: url("/Blender-Camp-Scene.png");
+  --focus-x: 87%;
+  --focus-y: 25%;
+  background-size: cover;
+  background-position: var(--focus-x) var(--focus-y);
+  overflow: hidden;
+  z-index: 1;
 }
-
 /* Media Queries */
 @media screen and (max-width: 768px) {
   .title {
@@ -66,24 +72,24 @@
 
   .heading {
     top: 70%;
-    font-size: clamp(14px, 4vw, 36px);
+    font-size: clamp(14px, 4vw, 18px);
   }
 
-  .navigation-boxes {
-    bottom: 10%;
-  }
-}
-
-@media screen and (max-width: 480px) {
   .contact-btn {
     top: 2%;
     right: 2%;
   }
+
+  .navigation-boxes {
+    top: calc(13% + 1.5em + clamp(24px, 4vw, 36px));
+    left: 61%;
+  }
 }
 
-@media screen and (width: 768px) {
+@media screen and (max-width: 320px) {
   .title {
-    left: 28%;
-    top: 11%;
+    top: 5%;
+    font-size: clamp(48px, 8vw, 108px);
+    left: 50%;
   }
 }

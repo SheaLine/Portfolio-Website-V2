@@ -46,7 +46,32 @@
   transform: scale(1);
 }
 
-@media screen and (max-width: 480px) {
+.mobile-button {
+  /* display: inline-flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 7px;
+  background-color: #a24d30;
+  color: white;
+  font-family: "Playpen Sans", cursive;
+  font-size: clamp(14px, 2vw, 16px);
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: none; /* no hover‑grow animation on mobile */
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .container,
+  .box,
+  .container:hover .box,
+  .container:hover .text {
+    display: none !important;
+  }
+}
+
+/* @media screen and (max-width: 480px) {
   .box {
     width: 24px;
     height: 24px;
@@ -57,5 +82,5 @@
     transform: translateX(-24px);
     width: 100px;
     height: 48px;
-  }
-}
+  } */
+/* } */
