@@ -1,4 +1,3 @@
-import React from "react";
 import "./LinkBtn.css";
 
 function LinkBtn({ text, target }) {
