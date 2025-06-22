@@ -1,15 +1,15 @@
 {
     "slides": [
       {
-        "src": "/Portfolio-Website-V2/self2.png",
+        "src": "/self2.png",
         "alt": "Image 1 for carousel"
       },
       {
-        "src": "/Portfolio-Website-V2/self3.png",
+        "src": "/self3.png",
         "alt": "Image 2 for carousel"
       },
       {
-        "src": "/Portfolio-Website-V2/self4.png",
+        "src": "/self4.png",
         "alt": "Image 3 for carousel"
       }
     ]

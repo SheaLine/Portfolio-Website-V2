@@ -38,7 +38,7 @@ function Carousel({ data }) {
           >
             {item.src.endsWith(".mp4") ? (
               <video
-                src={item.src}
+                src={process.env.NODE_ENV === "development" ? "/Portfolio-Website-V2" + item.src : item.src}
                 alt={item.alt}
                 ref={(el) => (videoRefs.current[idx] = el)}
                 controls

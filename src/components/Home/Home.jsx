@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // // Home.jsx
 // import React, { useRef, useState, useEffect } from "react";
 // import { useNavigate } from "react-router-dom";
@@ -137,13 +138,13 @@ function Home({ handleFadeOut }) {
     handleFadeOut();
     setTimeout(() => navigate(path), 300);
   };
-
+  
   return (
     <Scene
       ref={sceneRef}
-      VideoSrc="/Portfolio-Website-V2/Blender-Camp-Scene.mp4"
-      AudioSrc="/Portfolio-Website-V2/CampAudio.mp3"
-      PosterSrc="/Portfolio-Website-V2/Blender-Camp-Scene.png"
+      VideoSrc= {process.env.NODE_ENV === "development" ? "/Blender-Camp-Scene.mp4" : "/Portfolio-Website-V2/Blender-Camp-Scene.mp4"}
+      AudioSrc= {process.env.NODE_ENV === "development" ? "/CampAudio.mp3" : "/Portfolio-Website-V2/CampAudio.mp3"}
+      PosterSrc= {process.env.NODE_ENV === "development" ? "/Blender-Camp-Scene.png" : "/Portfolio-Website-V2/Blender-Camp-Scene.png"}
     >
       <div className="absolute top-4 right-4 z-20">
         <ContactBtn

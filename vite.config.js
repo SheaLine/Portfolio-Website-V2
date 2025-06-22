@@ -6,4 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   base: process.env.NODE_ENV === 'production' ? '/Portfolio-Website-V2/' : '/',
   plugins: [react(), tailwindcss()],
+  server: {
+    host: true
+  },
 })

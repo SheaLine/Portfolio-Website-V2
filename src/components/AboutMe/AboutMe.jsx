@@ -8,9 +8,9 @@ function AboutMe() {
   return (
     <PageLayout className="about-me" title="Hello There!">
       <div className="portrait-wrapper">
-        <img src="/Portfolio-Website-V2/self.png" className="portrait"></img>
+        <img src={process.env.NODE_ENV === "development" ? "/self.png" : "/Portfolio-Website-V2/self.png"} className="portrait"></img>
       </div>
-      <p>
+      <p className="p-font">
         My name is Shea Line and I am from Northern California. I will be
         earning a Bachelor of Science in Computer Science at the University of
         California, Santa Cruz in June 2025. I have a passion for building all
@@ -20,7 +20,7 @@ function AboutMe() {
         strong organizational and analytical skills.
       </p>
       <Carousel data={slides} />
-      <p>
+      <p className="p-font">
         In addition to my love of technology, I am interested in the outdoors. I
         love to backpack, camp, hike, and snowboard. I think that the best
         stories I have ever been told have been around a campfire, so I decided

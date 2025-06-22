@@ -171,7 +171,7 @@ const Scene = forwardRef(function Scene(
 
       <audio ref={audioRef} src={AudioSrc} loop />
 
-      <div className="py-20 lg:p-50 relative z-10 overflow-hidden">
+      <div className="py-20 lg:p-50 absolute inset-0 z-10 overflow-hidden">
         {/* Mute/unmute button */}
         {location.pathname === "/home" && (
           <>
@@ -180,18 +180,19 @@ const Scene = forwardRef(function Scene(
             className={`
             absolute top-4 left-4
             px-4 py-2
+            inline-flex items-center space-x-2
             bg-[#9e8b76] text-white
             rounded text-xl
             hover:bg-[#776858]/90 transition
             cursor-pointer
+            contact-btn-font
           `}
-          >
-            {isMuted ? <BiSolidVolumeMute /> : <BiSolidVolumeFull />}
-          </button>
+          >Listen...{isMuted ? <BiSolidVolumeMute /> : <BiSolidVolumeFull />}</button>
           </>
         )}
 
         {/* Children components */}
+
         {children}
       </div>
     </div>

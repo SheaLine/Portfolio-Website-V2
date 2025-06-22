@@ -37,7 +37,7 @@
   height: auto;
   object-fit: contain;
 }
-
+/* 
 .courses .course-wrapper {
   display: flex;
   flex-direction: column;
@@ -45,7 +45,7 @@
   width: 90%;
   max-width: 800px;
   margin: 20px auto;
-}
+} */
 
 .courses h2 {
   font-size: clamp(16px, 2.5vw, 20px);

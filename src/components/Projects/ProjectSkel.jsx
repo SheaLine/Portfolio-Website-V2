@@ -6,14 +6,14 @@ import "./Projects.css";
 function Project({ title, skills, description, links, slides }) {
   return (
     <>
-      <h3>{title}</h3>
+      <h3 className="h3-font text-4xl">{title}</h3>
       <div className="skills">
         {skills.map((skill, index) => (
           <h4 key={index}>{skill}</h4>
         ))}
       </div>
       {description.map((paragraph, index) => (
-        <p key={index}>{paragraph}</p>
+        <p className="p-font md:text-xl" key={index}>{paragraph}</p>
       ))}
       <div
         className={`buttons ${

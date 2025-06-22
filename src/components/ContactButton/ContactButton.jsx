@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { IoCloseCircleSharp } from "react-icons/io5";
 import ContactInfo from "./ContactInfo";
 import LinkBtn from "../Projects/LinkBtn";
@@ -15,7 +15,16 @@ function ContactBtn({ text, target }) {
 
   return (
     <>
-      <button className="contact-button" onClick={OpenContainer}>
+      <button
+        className="px-4 py-2
+            inline-flex items-center space-x-2
+            bg-[#9e8b76] text-white
+            rounded text-xl
+            hover:bg-[#776858]/90 transition
+            cursor-pointer
+            contact-btn-font"
+        onClick={OpenContainer}
+      >
         {text}
       </button>
 

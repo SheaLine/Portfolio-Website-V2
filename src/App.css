@@ -24,6 +24,13 @@
 .custom-subtitle{
   font-family: "Titillium Web", sans-serif;
 }
+
+.contact-btn-font{
+  font-family: "Jersey 10", sans-serif;
+}
+@theme {
+  --contact-btn-font:  "Titillium Web", sans-serif;
+}
 /* 
 * {
   box-sizing: border-box;
@@ -40,11 +47,11 @@ body,
 
 body {
   background: #000000;
-  /* font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif; */
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
 
-/* h1 {
+.h1-font {
   margin: 20px;
   font-family: "Zilla Slab Highlight", serif;
   font-weight: 700;
@@ -54,7 +61,7 @@ body {
   color: rgb(255, 239, 239);
 }
 
-h2 {
+.h2-font {
   margin-top: 0;
   font-family: "Zilla Slab Highlight", serif;
   font-weight: 700;
@@ -63,7 +70,7 @@ h2 {
   color: rgb(255, 239, 239);
 }
 
-h3 {
+.h3-font {
   font-family: "Rock Salt", cursive;
   font-weight: 400;
   font-style: normal;
@@ -73,16 +80,15 @@ h3 {
   margin: 0;
 } 
 
-p {
+.p-font {
   line-height: 1.5;
   text-align: justify;
   font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
+  /* font-optical-sizing: auto; */
   font-weight: 550;
   font-style: normal;
   color: #ffffff;
-  font-size: clamp(14px, 2vw, 16px);
-} */
+}
 
 /* classes for fading in and out of pages */
 .fade-enter,
