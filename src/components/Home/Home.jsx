@@ -141,9 +141,9 @@ function Home({ handleFadeOut }) {
   return (
     <Scene
       ref={sceneRef}
-      VideoSrc="/Blender-Camp-Scene.mp4"
-      AudioSrc="/CampAudio.mp3"
-      PosterSrc="/Blender-Camp-Scene.png"
+      VideoSrc="/Portfolio-Website-V2/Blender-Camp-Scene.mp4"
+      AudioSrc="/Portfolio-Website-V2/CampAudio.mp3"
+      PosterSrc="/Portfolio-Website-V2/Blender-Camp-Scene.png"
     >
       <div className="absolute top-4 right-4 z-20">
         <ContactBtn
