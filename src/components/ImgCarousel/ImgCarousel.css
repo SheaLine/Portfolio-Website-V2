@@ -9,8 +9,7 @@
 
 .slide {
   border-radius: clamp(15px, 3vw, 30px);
-  width: 100%;
-  height: auto;
+  height: 90%;
   aspect-ratio: 16/9;
 }
 

@@ -1,4 +1,4 @@
-.fullscreen-video-container {
+/* .fullscreen-video-container {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -21,13 +21,15 @@
   top: clamp(15px, 3%, 20px);
   left: clamp(15px, 3%, 20px);
   padding: clamp(8px, 2vw, 10px) clamp(15px, 3vw, 20px);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #9e8b76;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: clamp(14px, 2vw, 16px);
   transition: background-color 0.3s ease;
+  align-items: center;
+  justify-items: center;
 }
 
 .mute-button:hover {
@@ -44,25 +46,4 @@
     width: clamp(155%, calc(369% - 214% * ((100vw - 480px) / 288)), 369%);
     object-fit: contain;
   }
-}
-
-/* @media screen and (width: 375px) {
-  .fullscreen-video {
-    left: -34%;
-  }
-}
-
-@media screen and (width: 425px) {
-  .fullscreen-video {
-    left: -25%;
-  }
-}
-
-@media screen and (width: 768px) {
-  .fullscreen-video {
-    left: 26%;
-    width: 155%;
-    object-fit: contain; */
-/* } */
-/* } */
-/*  */
+} */

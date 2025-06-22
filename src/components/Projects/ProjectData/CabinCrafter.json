@@ -12,15 +12,15 @@
     ],
     "slides": [
       {
-        "src": "/ProjectAssets/CabinCrafter.png",
+        "src": "/Portfolio-Website-V2/ProjectAssets/CabinCrafter.png",
         "alt": "Image 1 for carousel"
       },
       {
-        "src": "/ProjectAssets/CabinCrafterFrontEnd.mp4",
+        "src": "/Portfolio-Website-V2/ProjectAssets/CabinCrafterFrontEnd.mp4",
         "alt": "Image 1 for carousel"
       },
       {
-        "src": "/ProjectAssets/CabinCrafterBackend.mp4",
+        "src": "/Portfolio-Website-V2/ProjectAssets/CabinCrafterBackend.mp4",
         "alt": "Image 2 for carousel"
       }
     ]
