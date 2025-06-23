@@ -9,23 +9,23 @@
     "links": [],
     "slides": [
       {
-        "src": "/Portfolio-Website-V2/BluFinAssets/login.png",
+        "src": "/BluFinAssets/login.png",
         "alt": "Image 1 for carousel"
       },
       {
-        "src": "/Portfolio-Website-V2/BluFinAssets/InsuranceAgent.png",
+        "src": "/BluFinAssets/InsuranceAgent.png",
         "alt": "Image 2 for carousel"
       },
       {
-        "src": "/Portfolio-Website-V2/BluFinAssets/Admin.png",
+        "src": "/BluFinAssets/Admin.png",
         "alt": "Image 2 for carousel"
       },
       {
-        "src": "/Portfolio-Website-V2/BluFinAssets/ClaimSubmission.png",
+        "src": "/BluFinAssets/ClaimSubmission.png",
         "alt": "Image 2 for carousel"
       },
       {
-        "src": "/Portfolio-Website-V2/BluFinAssets/AccountInfo.png",
+        "src": "/BluFinAssets/AccountInfo.png",
         "alt": "Image 2 for carousel"
       }
     ]
