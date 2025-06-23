@@ -1,17 +1,9 @@
 const PdfViewer = () => {
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "100%",
-        textAlign: "center",
-        overflow: "hidden",
-      }}
-    >
+    <div className="w-full h-screen flex justify-center items-center bg-gray-100">
       <embed
         src="/Portfolio-Website-V2/Resume.pdf"
-        width="80%"
-        height="100%"
+        className="w-full h-full"
         type="application/pdf"
       />
     </div>
