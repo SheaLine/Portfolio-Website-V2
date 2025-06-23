@@ -56,6 +56,17 @@
   margin-top: 20px;
   padding: 0 20px;
 }
+.projects .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  width: 100%;
+}
+.about-me .carousel {
+  width: 71%;
+}
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
