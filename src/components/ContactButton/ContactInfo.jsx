@@ -6,7 +6,7 @@ import "./ContactInfo.css";
 function ContactInfo() {
   return (
     <>
-      <h2>Contact Me</h2>
+      <h2 className="h2-font">Contact Me</h2>
       <div className="contact">
         <div className="contact-item">
           <FaPhoneSquare color="white" className="icon" />
