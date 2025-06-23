@@ -11,6 +11,7 @@
   transform: translate(-50%, -50%);
   z-index: 2;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: clamp(15px, 3vw, 30px);
   box-sizing: border-box;
   scrollbar-width: none;
