@@ -49,7 +49,7 @@ function Carousel({ data }) {
               />
             ) : (
               <img
-                src={item.src}
+                src={process.env.NODE_ENV === "development" ? item.src : "/Portfolio-Website-V2" + item.src}
                 alt={item.alt}
                 key={idx}
                 className="slide-content"

@@ -7,7 +7,7 @@ import BlueFin from "./ExperienceData/BlueFin.json";
 
 function Experience() {
   return (
-    <PageLayout className="experience" title="Work Experience">
+    <PageLayout className="experience text-center" title="Work Experience">
       <div className="line"></div>
       <Project {...BlueFin} />
     </PageLayout>

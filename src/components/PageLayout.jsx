@@ -18,7 +18,7 @@ function PageLayout({ className, title, handleFadeOut, children }) {
       <div className="fullscreen-image-container">
         <BackButton handleFadeOut={handleFadeOut} />
         <div className={className}>
-          <h1 className="h1-font text-8xl">{title}</h1>
+          <h1 className="h1-font text-8xl w-full text-center">{title}</h1>
           {children}
         </div>
       </div>
@@ -29,7 +29,7 @@ function PageLayout({ className, title, handleFadeOut, children }) {
     <Scene VideoSrc="./Blender-Camp-Scene.mp4">
       <BackButton handleFadeOut={handleFadeOut} />
       <div className={className}>
-        <h1 className="h1-font text-8xl" >{title}</h1>
+        <h1 className="h1-font text-8xl w-full text-center" >{title}</h1>
         {children}
       </div>
     </Scene>
