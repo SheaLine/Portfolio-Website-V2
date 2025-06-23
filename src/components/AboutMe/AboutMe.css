@@ -23,6 +23,14 @@
   display: none;
 }
 
+
+.about-me p {
+  width: 90%;
+  max-width: 800px;
+  margin: 15px auto;
+  padding: 0 10px;
+}
+
 .about-me .portrait-wrapper {
   display: flex;
   justify-content: center;
