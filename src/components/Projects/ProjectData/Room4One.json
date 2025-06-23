@@ -1,0 +1,27 @@
+{   
+    "title": "Room For One!",
+    "skills": ["Unity", "Deployment", "Testing", "Adaptability", "Communication", "Optimization"],
+    "description": ["Room For One! is a free-to-play, online multiplayer 3D platformer-racer released on Steam on June 11, 2025. I developed this game as part of a team of 7 as my capstone project. ", 
+    "As one of the lead developers, I drove the project end-to-end: designing level layouts, developing the entity system and creating interactive collectable item power ups, and managing the Steam deployment pipeline. I also helped lead regular playtest sessions to gather player feedback and iterate on level design, balance, and mechanics. This launch sharpened my skills in multiplayer networking, performance optimization, and live-ops release management."
+    ],
+    "links": [
+      {
+        "text": "Steam Page",
+        "target": "https://store.steampowered.com/app/3693260/Room_For_One/"
+      }
+    ],
+    "slides": [
+      {
+        "src": "/ProjectAssets/Room4One.jpg",
+        "alt": "Image 1 for carousel"
+      },
+      {
+        "src": "/ProjectAssets/Room4OneTrailer.mp4",
+        "alt": "Image 2 for carousel"
+      },
+      {
+        "src": "/ProjectAssets/RoomForOne.mp4",
+        "alt": "Image 3 for carousel"
+      }
+    ]
+  }

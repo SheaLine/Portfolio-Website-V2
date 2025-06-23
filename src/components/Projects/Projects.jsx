@@ -9,12 +9,14 @@ import ChessAI from "./ProjectData/ChessAI.json";
 import Network from "./ProjectData/Network.json";
 import Portfolio from "./ProjectData/Portfolio.json";
 import CabinCrafter from "./ProjectData/CabinCrafter.json";
+import Room4One from "./ProjectData/Room4One.json";
 import "./Projects.css";
 
 function Projects() {
   return (
     <PageLayout className="projects" title="Projects">
       <div className="line"></div>
+      <Project {...Room4One} />
       <Project {...CabinCrafter} />
       <Project {...Portfolio} />
       <Project {...ChessAI} />

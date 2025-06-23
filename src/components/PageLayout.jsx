@@ -15,7 +15,7 @@ function PageLayout({ className, title, handleFadeOut, children }) {
 
   if (isMobile) {
     return (
-      <div className="fullscreen-image-container">
+      <div className="fullscreen-image-container overflow-x-hidden">
         <BackButton handleFadeOut={handleFadeOut} />
         <div className={className}>
           <h1 className="h1-font text-8xl w-full text-center">{title}</h1>

@@ -171,7 +171,7 @@ const Scene = forwardRef(function Scene(
 
       <audio ref={audioRef} src={AudioSrc} loop />
 
-      <div className="py-20 lg:p-50 absolute inset-0 z-10 overflow-hidden">
+      <div className="py-20 lg:p-50 absolute inset-0 z-10 overflow-hidden overflow-x-hidden">
         {/* Mute/unmute button */}
         {location.pathname === "/home" && (
           <>

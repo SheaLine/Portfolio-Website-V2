@@ -28,27 +28,12 @@
 .contact-btn-font{
   font-family: "Jersey 10", sans-serif;
 }
-@theme {
-  --contact-btn-font:  "Titillium Web", sans-serif;
-}
-/* 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-} */
-
-/* html,
-body,
-#root {
-  width: 100%;
-  height: 100%;
-} */
 
 body {
   background: #000000;
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  overflow-x: hidden;
 }
 
 .h1-font {
