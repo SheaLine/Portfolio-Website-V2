@@ -46,6 +46,30 @@
     {
       "name": "CMPM 121 - Game Development Patterns",
       "link": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-121/"
+    },
+    {
+      "name": "CMPM 146 - Game AI",
+      "link": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-146/"
+    },
+    {
+      "name": "CSE 182 - Intro Database Management",
+      "link": "https://catalog.ucsc.edu/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-182/"
+    },
+    {
+      "name": "CSE 183 - Web Applications",
+      "link": "https://catalog.ucsc.edu/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-183/"
+    },
+    {
+      "name": "CMPM 170 - Game Production Studio",
+      "link": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-170/"
+    },
+    {
+      "name": "CMPM 171 - Game Production Studio 2",
+      "link": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-171/"
+    },
+    {
+      "name": "CMPM 172 - Game Production Studio 3",
+      "link": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-172/"
     }
   ]
   
