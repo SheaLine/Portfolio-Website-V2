@@ -14,7 +14,7 @@ function ContactInfo() {
         </div>
         <div className="contact-item">
           <IoMdMail className="icon" />
-          <span>sline@ucsc.edu</span>
+          <span>shealine21@gmail.com</span>
         </div>
         <div className="contact-item">
           <FaLinkedin className="icon" />
